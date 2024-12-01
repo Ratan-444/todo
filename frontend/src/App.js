@@ -8,7 +8,7 @@ function App() {
   // Fetch Todos
   const fetchTodos = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/todos');
+      const res = await axios.get('https://todo-backend-sigma-eight.vercel.app/api/todos');
       setTodos(res.data);
     } catch (err) {
       console.error(err);
@@ -18,7 +18,7 @@ function App() {
   // Add Todo
   const addTodo = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/api/todos', { text: newTodo });
+      const res = await axios.post('https://todo-backend-sigma-eight.vercel.app//api/todos', { text: newTodo });
       setTodos([...todos, res.data]);
       setNewTodo('');
     } catch (err) {
@@ -29,7 +29,7 @@ function App() {
   // Delete Todo
   const deleteTodo = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/todos/${id}`);
+      await axios.delete(`https://todo-backend-sigma-eight.vercel.app/api/todos/${id}`);
       setTodos(todos.filter((todo) => todo._id !== id));
     } catch (err) {
       console.error(err);
