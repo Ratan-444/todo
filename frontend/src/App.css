@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  margin-right: 8px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 4px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+}
